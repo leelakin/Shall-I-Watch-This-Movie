@@ -1,0 +1,224 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+	background-color: #f9f5ec;
+	color: #333;
+	font-family: 'Maven Pro', sans-serif;
+}
+img{
+	vertical-align: middle;
+}
+.container{
+	max-width: 1200px;
+}
+#topbox{
+	margin:0px;
+	width:100%;
+	background-color: #000;
+	border-bottom: 4px solid #ccb366;
+}
+#logobanner{
+	margin-top:0px;
+	width:100%;
+	max-width:600px;
+}
+#logobanner, .slogan, .searchbox{
+	background-color: #000;
+}
+.slogan{
+	margin-bottom:0px;
+	color:#ccb366;
+	font-family:"Architects Daughter";
+	font-weight: 500;
+	font-size: 1.4em;
+}
+#topbox>img{
+	display:inline-block;
+}
+.searchbox, .slogan, #topbox .row{
+	padding:0px;
+	text-align: center;
+}
+#topbox .row.slog{
+	width:90%;
+	margin: 0 auto;
+}
+#topbox .row.slog>p{
+	text-align: left;
+}
+.searchbox{
+	color: #000;
+}
+.searchfield{
+	border-radius:5px;
+	margin:5px;
+	width:75%;
+}
+input, select, textarea, button{
+	font-family:inherit;
+}
+.searchfield, .btn, .btn:hover, .btn:focus, .btn:active{
+	font-size: 1.4em;
+	color:#333;
+	padding:0px 8px;
+	height:50px;
+	vertical-align: middle;
+	border: 2px solid #000;
+	border-radius: 10px;
+	outline:none !important;
+}
+.popcorn{
+	width:16%;
+	max-width: 80px;
+	cursor: pointer;
+	margin-bottom: 20px;
+	margin-left: 5px;
+}
+input, input[type="text"]:focus, .btn:hover, .btn:focus{
+	color: #000;
+	border-color: rgba(255, 204, 0, 0.8);
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 204, 0, 0.6);
+	outline: 0 none;	
+}
+input[type="text"]:focus{
+	color:#333;
+}
+#results{
+	margin: 0 auto;
+	margin-top:10px;
+	padding:0px;
+	font-size: 1.2em;
+}
+.lead{
+	font-size: 1.4em !important;
+	font-weight: 700;
+	text-align: left;
+}
+.row{
+	margin:0px;
+}
+.moviebox{
+	color:#000;
+	display:block;
+	min-height: 200px;
+	width:100%;
+}
+.poster>img{
+	vertical-align:middle;
+	height:200px;
+	width:auto;
+	float:right;
+}
+.moviebox .poster{
+	width:35%;
+	overflow:hidden;
+	height: 200px;
+}
+.moviebox .descr{
+	padding: 15px 20px;
+	width:65%;
+	min-height:200px;
+	vertical-align: middle;
+}
+.moviebox .poster, .moviebox .descr{
+	float:left;
+}
+.moviebox .descr .title{
+	font-size: 1.5em;
+}
+.moviebox .descr button{
+	color: #fff;
+	font-weight: 700;
+	background-color: #333;
+	border-radius:10px;
+	border:none;
+	width:100%;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+.moviebox .descr button:focus, .moviebox .descr button:hover, .moviebox .descr button:active{
+	box-shadow: 0px 40px 80px #726027 inset;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(255, 204, 0, 0.6);
+}
+
+/*PICKED MOVIE*/
+.moviebox #ratings{
+	margin-top:-10px;
+}
+.moviebox #ratings #overall{
+	font-size: 1.5em;
+}
+.moviebox #ratings #overallnum{
+	font-size: 2em;
+	font-weight: 700;
+	color: green;
+	margin-bottom: 20px;
+}
+.moviebox #ratings>p{
+	margin-bottom: -8px;
+	font-weight: 700;
+}
+.moviebox #ratings #overallnum.red{
+	color: red;
+}
+.moviebox .sub{
+	font-size: 0.8em;
+	color: #777;
+}
+.moviebox #moreinfo{
+	font-size: 0.8em;
+}
+
+
+@media (min-width: 500px){
+	.searchfield{
+		width:80%;
+		max-width:400px;
+	}
+	.popcorn{
+		width:14%;
+	}
+	.moviebox #ratings{
+		margin-top:-30px;
+	}
+	#topbox .row .slog{
+		text-align: center;
+		width:100%;
+	}
+	#topbox .row.slog>p{
+		text-align: center;
+	}
+	.moviebox .poster{
+		width:25%;
+	}
+	.moviebox .descr{
+		width:75%;
+	}
+	.moviebox .sub{
+		font-size: 0.9em;
+	}
+}
+
+@media (min-width: 768px){
+	#results{
+		max-width: 550px;
+	}
+	.moviebox{
+		overflow:hidden;
+		margin:0 auto;
+		max-width:550px;
+		margin-bottom: 10px;
+	}
+	.searchfield{
+		margin:0px;
+		width:85%;
+	}
+	#logobanner{
+		margin-top:10px;
+	}
+}
